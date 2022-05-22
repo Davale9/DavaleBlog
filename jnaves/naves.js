@@ -37,7 +37,7 @@ var enemigos = [];
 
 //Definir variables para las imágenes.
 var fondo, imgNave, imgEnemigo, imgDisparo, imgDisparoEnemigo;
-var imagenes = ['/imagenes/monster.png','/imagenes/naveEspacial.png','/imagenes/laserEnemigo.png','/imagenes/laser.png','/imagenes/espacio.jpg'];
+var imagenes = ['imagenes/monster.png','imagenes/naveEspacial.png','imagenes/laserEnemigo.png','imagenes/laser.png','imagenes/espacio.jpg'];
 var preloader;
 
 //Definición de funiones
@@ -59,15 +59,15 @@ function progresoCarga() {
   if (preloader.progress == 1) {
     var interval = window.setInterval(frameLoop, 1750/30);
     fondo = new Image();
-    fondo.src = '/imagenes/espacio.jpg';
+    fondo.src = 'imagenes/espacio.jpg';
     imgNave = new Image();
-    imgNave.src = '/imagenes/naveEspacial.png';
+    imgNave.src = 'imagenes/naveEspacial.png';
     imgEnemigo = new Image();
-    imgEnemigo.src = '/imagenes/monster.png';
+    imgEnemigo.src = 'imagenes/monster.png';
     imgDisparo = new Image();
-    imgDisparo.src = '/imagenes/laser.png';
+    imgDisparo.src = 'imagenes/laser.png';
     imgDisparoEnemigo = new Image();
-    imgDisparoEnemigo.src = '/imagenes/laserEnemigo.png';
+    imgDisparoEnemigo.src = 'imagenes/laserEnemigo.png';
   }
 }
 
